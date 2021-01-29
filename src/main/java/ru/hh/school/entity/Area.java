@@ -10,7 +10,7 @@ public class Area {
   @Column(name = "area_id")
   private Integer id;
 
-  @Column(name = "area_name")
+  @Column(name = "name")
   private String name;
 
   public String getName() {
