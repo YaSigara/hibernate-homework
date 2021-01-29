@@ -22,6 +22,7 @@ public class EmployerDao extends GenericDao {
                     "FROM Employer empr " +
                             "JOIN FETCH empr.vacancies " +
                             "WHERE empr.id = :employerId", Employer.class)
+            .setParameter("employerId", employerId)
             .getSingleResult();
   }
 
